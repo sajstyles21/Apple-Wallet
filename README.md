@@ -2,7 +2,7 @@
 
 Clone project with command `git clone https://github.com/sajstyles21/Apple-Wallet.git`.
 
-Run `cd path-to-project` //Go to the root of project
+Run `cd path-to-project` (Go to the root of project)
 
 Run `composer update`
 
