@@ -1,4 +1,4 @@
-# Source code for creating business card and add to apple wallet.
+# Please follow the below steps in the given order for project installation.
 
 Clone project with command `git clone https://github.com/sajstyles21/Apple-Wallet.git`.
 
