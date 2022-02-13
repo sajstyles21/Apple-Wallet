@@ -21,7 +21,7 @@ Start server by command `php artisan serve`.
 Local URL for creating business card -
 URL - http://127.0.0.1:8000/create-pass
 
-NOTE - Please update `APP_URL` in the .env file for your base URL whether it is live server or local server.
+IMPORTANT - Please update `APP_URL` in the .env file for your base URL according to the server (live server or local server).
 
 Possible local URLs -
 
