@@ -117,17 +117,17 @@ class Controller extends BaseController
                         [
                             "key" => "company_name",
                             "label" => "Company name",
-                            "value" => $userDetails->cname
+                            "value" => $userDetails->cname??'N/A'
                         ],
                         [
                             "key" => "role_company",
                             "label" => "Role in company",
-                            "value" => $userDetails->role
+                            "value" => $userDetails->role??'N/A'
                         ],
                         [
                             "key" => "department",
                             "label" => "Department",
-                            "value" => $userDetails->department
+                            "value" => $userDetails->department??'N/A'
                         ]
                     ],
                     "auxiliaryFields" => [],

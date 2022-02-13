@@ -6,13 +6,15 @@ Run `composer update`
 
 Run `cp .env.example .env` for copying .env.example to .env and add DB credentials.
 
-NOTE - Please update `APP_URL` to `http://127.0.0.1:8000` in the .env file.
+NOTE - Please update `APP_URL` to `http://127.0.0.1:8000` or `http://localhost:8000` according to your local base url in the .env file.
 
 Run `php artisan migrate` for migrations.
 
 Run `php artisan db:seed` for users seeding.
 
 Run `php artisan key:generate` for generating encryption key.
+
+Run `php artisan storage:link` for creating storage links.
 
 Start server by command `php artisan serve`.
 
