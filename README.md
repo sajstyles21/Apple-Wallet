@@ -1,17 +1,23 @@
 # Source code for creating business card and add to apple wallet.
 
+Clone project with command `git clone https://github.com/sajstyles21/Apple-Wallet.git`.
+
 Run `composer update`
 
-copy .env.example to .env and add DB credentials.
+Run `cp .env.example .env` for copying .env.example to .env and add DB credentials.
+
+NOTE - Please update `APP_URL` to `http://127.0.0.1:8000` in the .env file.
 
 Run `php artisan migrate` for migrations.
 
-Run `php artisan db:seed` for users seeding
+Run `php artisan db:seed` for users seeding.
+
+Run `php artisan key:generate` for generating encryption key.
+
+Start server by command `php artisan serve`.
 
 Local URL for creating business card -
 URL - http://127.0.0.1:8000/create-pass
-
-Start server by command `php artisan serve`
 
 NOTE - Please update `APP_URL` in the .env file for your base URL whether it is live server or local server.
 
