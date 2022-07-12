@@ -99,7 +99,7 @@ class Controller extends BaseController
                 "backgroundColor"   => "rgb(" . $background['r'] . ", " . $background['g'] . ", " . $background['b'] . ")",
                 "labelColor"   => "rgb(" . $label['r'] . ", " . $label['g'] . ", " . $label['b'] . ")",
                 "barcode" => [
-                    "message"   => "encodedmessageonQR",
+                    "message"   => $userDetails->bar_code,
                     "format"    => "PKBarcodeFormatQR",
                     "altText"   => $userDetails->bar_code,
                     "messageEncoding" => "utf-8",
@@ -145,6 +145,7 @@ class Controller extends BaseController
             //$pass->addAsset(base_path('storage/app/public/logo.jpeg'));
             $pass->addAsset(base_path('storage/app/public/'.$folder.'/logo.png'));
             $pass->addAsset(base_path('storage/app/public/'.$folder.'/thumbnail.png'));
+            $pass->addAsset(base_path('public/icon.png'));
             //$pass->addAsset(base_path('resources/logo.jpeg'));
             //$pass->addAsset(base_path('storage/app/public/'.$userDetails->logo));
 
@@ -155,7 +156,7 @@ class Controller extends BaseController
                 'Content-Description' => 'File Transfer',
                 'Content-Disposition' => 'attachment; filename="pass.pkpass"',
                 'Content-length' => strlen($pkpass),
-                'Content-Type' => PassGenerator::getPassMimeType(),
+                'Content-Type' => 'application/vnd.apple.pkpass',
                 'Pragma' => 'no-cache',
             ]);
         }
